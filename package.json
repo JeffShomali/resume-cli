@@ -1,0 +1,19 @@
+{
+  "name": "jeffshomali-resume",
+  "version": "0.0.1",
+  "description": "Jeff Shomali Resume CLI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Shomali <info@jeffshomali.com> (http://www.jeffshomali.com)",
+  "license": "ISC",
+  "bin": {
+    "jeffshomali": "./index.js"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.15.1"
+  }
+}
