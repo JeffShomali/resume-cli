@@ -19,7 +19,7 @@ var profile = {
   },
   objectiveAndSummary: {
     objective: "Software Engineer | Full Stack Developer | Mobile Developer",
-    summary: "A recent graduated Software Engineer and Full Stack Developer with 5 years hands on experience in Front End, Back End, Web and Mobile Development. Proficient in web technologies and specialize in MERN and LAMP stack, mobile development with React Native. Familiar with most recent JavaScript frameworks and libraries. Seeking an opportunity in the following fields: ",
+    summary: "\tA recent graduated Software Engineer and Full Stack Developer with 5 years hands on experience in Front End, Back End, Web and Mobile Development.\n\tProficient in web technologies and specialize in MERN and LAMP stack, mobile development with React Native.\n\tFamiliar with most recent JavaScript frameworks and libraries.\n\tSeeking an opportunity in the following fields: ",
     fields: [
       'Front End Web Development',
       'UI Development',
@@ -38,9 +38,9 @@ var profile = {
     editors: 'Sublime, Atom, Visual Studio Code, PHPStorm, WebStorm'
   },
   experience: {
-    1: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t\t\t\t TUTYO 2016 – present',
-    2: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t\t\t\t Purrivacy (Intern) 2015– 2016',
-    3: 'Freelance Web Developer  \t\t\t\t\t\t\t\t\t\t\t\t 2013 – Present'
+    1: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t TUTYO 2016 – present',
+    2: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t Purrivacy (Intern) 2015– 2016',
+    3: 'Freelance Web Developer  \t\t\t\t\t\t\t\t\t 2013 – Present'
   },
   projects: {
     1: 'iOS Cryptocurrency App: iOS Cryptocurrency app to watch all coin’s market data and news. Built in React NaJve, Reseul API.',
@@ -49,13 +49,13 @@ var profile = {
     4: 'Visual Studio Code Snippet Generator: Web applicaJon to generate snippet code for VSCode. Built in React and NodeJS.'
   },
   education: {
-    1: 'Bachelor of Science in Computer Science. Trident University - Honor Student, GPA 3.6, Cypress, CA, April 2018',
-    2: 'Associate of Science in Computer Science. Diablo Valley College - Honor Student, GPA 3.8, Pleasant Hill, CA,',
-    3: 'CerJfied Advanced Java Programming, Program Design and Computer Architecture from DVC.',
-    4: 'CerJfied Front-End Web Developer Nanodegree, Udacity'
+    1: 'Bachelor of Science in Computer Science. Trident University \t- Honor Student, GPA 3.6, Cypress, CA, April 2018',
+    2: 'Associate of Science in Computer Science. Diablo Valley College \t- Honor Student, GPA 3.8, Pleasant Hill, CA, May 2016',
+    3: 'Certified Advanced Java Programming, Program Design and Computer Architecture \t- Diablo Valley Colledge 2016.',
+    4: 'Certified Front-End Web Developer Nanodegree, \t- Udacity, June 2016'
   },
   others: {
-    1: 'US CiJzen',
+    1: 'US Citizen',
     2: 'Twitter: @jeffshomali',
     3: 'Skype: jeffshomali',
     4: 'Schedule a call: calendly.com/jeffshomali'
@@ -65,63 +65,64 @@ var profile = {
 
 
 function resume() {
-
+  contacts()
+  summary()
+  skills()
+  experience()
+  projects()
+  education()
+  others()
 }
 
 function contacts() {
-  console.log(`
-  Name: ${profile.name} \t
-  Website: ${profile.contacts.website} \t
-  Github: ${profile.contacts.github} \t
-  Email: ${profile.contacts.email}  \t
-  Phone: ${profile.contacts.phone}  \t
-  Location: ${profile.contacts.location} \t
-  Twitter: ${profile.contacts.twitter} \t
-  LinkedIn: ${profile.contacts.linkedin} \t
-  Skype: ${profile.contacts.skype}
-  `)
+  console.log(`Name: ${profile.name} \t Website: ${profile.contacts.website} \t Github: ${profile.contacts.github} \t Email: ${profile.contacts.email}  \t Phone: ${profile.contacts.phone}  \nLocation: ${profile.contacts.location} \t Twitter: ${profile.contacts.twitter} \t LinkedIn: ${profile.contacts.linkedin} \t Skype: ${profile.contacts.skype}`)
 }
 
 function summary() {
-  console.log(`\nObjective: ${profile.objectiveAndSummary.objective} \n\nSummary: ${profile.objectiveAndSummary.summary}`)
+  console.log(`\nOBJECTIVE && SUMMARY: `)
+  console.log(`\t${profile.objectiveAndSummary.objective} \n\n${profile.objectiveAndSummary.summary}`)
   profile.objectiveAndSummary.fields.map(el => {
-    console.log(`${el}\t`)
+    console.log(`\t\t${el}`)
   })
-
 }
 
 function skills(obj = profile.skills) {
+  console.log(`\nSKILLS: `)
   Object.entries(obj).forEach(entry => {
     const [key, value] = entry;
-    console.log(`${key}: ${value}`);
+    console.log(`\t${key}: ${value}`);
   });
 }
 
 function experience() {
+  console.log("\nEXPERIENCE: ")
   Object.entries(profile.experience).forEach(entry => {
     const [key, value] = entry;
-    console.log(`${value}`);
+    console.log(`\t${value}`);
   })
 }
 
 function projects() {
+  console.log("\nPROJECTS: ")
   Object.entries(profile.projects).forEach(entry => {
     const [key, value] = entry;
-    console.log(`${value}`);
+    console.log(`\t${value}`);
   })
 }
 
 function education() {
+  console.log("\nEDUCATION: ")
   Object.entries(profile.education).forEach(entry => {
     const [key, value] = entry;
-    console.log(`${value}`);
+    console.log(`\t${value}`);
   })
 }
 
 function others() {
+  console.log("\nOTHERS INFORMATION: ")
   Object.entries(profile.others).forEach(entry => {
     const [key, value] = entry;
-    console.log(`${value}`);
+    console.log(`\t${value}`);
   })
 }
 
