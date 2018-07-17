@@ -3,6 +3,19 @@
 'use strict';
 var program = require('commander');
 const chalk = require('chalk');
+var figlet = require('figlet');
+
+// Display Ascii
+function displayAscii() {
+  figlet('Jeff Shomali', function(err, data) {
+    if (err) {
+        console.log('Something went wrong...');
+        console.dir(err);
+        return;
+    }
+    console.log(chalk.blue(data))
+  });
+}
 
 
 //  Data
@@ -66,6 +79,7 @@ var profile = {
 
 
 function resume() {
+  displayAscii()
   contacts()
   summary()
   skills()
