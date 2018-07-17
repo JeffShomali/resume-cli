@@ -2,6 +2,7 @@
 
 'use strict';
 var program = require('commander');
+const chalk = require('chalk');
 
 
 //  Data
@@ -75,11 +76,12 @@ function resume() {
 }
 
 function contacts() {
+  console.log(chalk.green("Personal Information: "))
   console.log(`Name: ${profile.name} \t Website: ${profile.contacts.website} \t Github: ${profile.contacts.github} \t Email: ${profile.contacts.email}  \t Phone: ${profile.contacts.phone}  \nLocation: ${profile.contacts.location} \t Twitter: ${profile.contacts.twitter} \t LinkedIn: ${profile.contacts.linkedin} \t Skype: ${profile.contacts.skype}`)
 }
 
 function summary() {
-  console.log(`\nOBJECTIVE && SUMMARY: `)
+  console.log(chalk.green(`\nOBJECTIVE && SUMMARY: `))
   console.log(`\t${profile.objectiveAndSummary.objective} \n\n${profile.objectiveAndSummary.summary}`)
   profile.objectiveAndSummary.fields.map(el => {
     console.log(`\t\t${el}`)
@@ -87,7 +89,7 @@ function summary() {
 }
 
 function skills(obj = profile.skills) {
-  console.log(`\nSKILLS: `)
+  console.log(chalk.green(`\nSKILLS: `))
   Object.entries(obj).forEach(entry => {
     const [key, value] = entry;
     console.log(`\t${key}: ${value}`);
@@ -95,7 +97,7 @@ function skills(obj = profile.skills) {
 }
 
 function experience() {
-  console.log("\nEXPERIENCE: ")
+  console.log(chalk.green("\nEXPERIENCE: "))
   Object.entries(profile.experience).forEach(entry => {
     const [key, value] = entry;
     console.log(`\t${value}`);
@@ -103,7 +105,7 @@ function experience() {
 }
 
 function projects() {
-  console.log("\nPROJECTS: ")
+  console.log(chalk.green("\nPROJECTS: "))
   Object.entries(profile.projects).forEach(entry => {
     const [key, value] = entry;
     console.log(`\t${value}`);
@@ -111,7 +113,7 @@ function projects() {
 }
 
 function education() {
-  console.log("\nEDUCATION: ")
+  console.log(chalk.green("\nEDUCATION: "))
   Object.entries(profile.education).forEach(entry => {
     const [key, value] = entry;
     console.log(`\t${value}`);
@@ -119,7 +121,7 @@ function education() {
 }
 
 function others() {
-  console.log("\nOTHERS INFORMATION: ")
+  console.log(chalk.green("\nOTHERS INFORMATION: "))
   Object.entries(profile.others).forEach(entry => {
     const [key, value] = entry;
     console.log(`\t${value}`);
