@@ -7,11 +7,11 @@ var figlet = require('figlet');
 
 // Display Ascii
 function displayAscii() {
-  figlet('Jeff Shomali', function(err, data) {
+  figlet('Jeff Shomali', function (err, data) {
     if (err) {
-        console.log('Something went wrong...');
-        console.dir(err);
-        return;
+      console.log('Something went wrong...');
+      console.dir(err);
+      return;
     }
     console.log(chalk.blue(data))
   });
@@ -143,33 +143,35 @@ function others() {
 }
 
 
-// Functions
-function jeffshomali(options) {
-  if (options === 'contacts') {
-    contacts()
-  } else if (options === 'summary') {
-    summary()
-  } else if (options === 'skills') {
-    skills()
-  } else if (options === 'experience') {
-    experience()
-  } else if (options === 'projects') {
-    projects()
-  } else if (options === 'education') {
-    education()
-  } else if (options === 'others') {
-    others()
-  } else {
-    resume()
-  }
-}
-
-// Commands
+// Command
 program
-  .command('jeffshomali [optional]')
-  .description('jeffshomali description')
-  .action(jeffshomali);
+  .version('0.0.1', '-v, --version')
+  .option('-a , --all', 'Display All Sections')
+  .option('-o, --objective', 'Dsiplay Objective and Summary')
+  .option('-s, --skills', 'Display Skills')
+  .option('-e, --experience', 'Display Experience')
+  .option('-p, --projects', 'Display Projects')
+  .option('-e, --education', 'Display Education')
+  .option('-o, --others', 'Display Others')
+  .parse(process.argv);
 
-program.parse(process.argv);
 
 if (program.args.length === 0) program.help();
+
+if (program.all) {
+  resume()
+}else if (program.objective){
+  summary()
+}else if(program.skills){
+  skills()
+}else if(program.experience){
+  experience()
+}else if(program.projects) {
+  projects()
+}else if(program.education){
+  education()
+}else if(program.others){
+  others()
+}else {
+  program.help()
+}
