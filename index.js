@@ -7,13 +7,13 @@ var figlet = require('figlet');
 
 // Display Ascii
 function displayAscii() {
-  figlet('Jeff Shomali', function (err, data) {
+  figlet('Jeff  Shomali', function (err, data) {
     if (err) {
       console.log('Something went wrong...');
       console.dir(err);
       return;
     }
-    console.log(chalk.blue(data))
+    console.log(chalk.yellow(data))
   });
 }
 
@@ -52,9 +52,11 @@ var profile = {
     editors: 'Sublime, Atom, Visual Studio Code, PHPStorm, WebStorm'
   },
   experience: {
-    1: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t TUTYO 2016 – present',
-    2: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t Purrivacy (Intern) 2015– 2016',
-    3: 'Freelance Web Developer  \t\t\t\t\t\t\t\t\t 2013 – Present'
+    1: 'Senior Software Engenier \t\t\t\t\t\t\t\t\t Nortek Security Control - 2018 - Present',
+    2: 'Web Analytics Implementation Specialist \t\t\t\t\t\t\t Robert Half Technology 2018 - 2018 ',
+    3: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t TUTYO 2016 – 2018',
+    4: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t Purrivacy (Intern) 2015– 2016',
+    5: 'Freelance Web Developer  \t\t\t\t\t\t\t\t\t 2013 – Forever'
   },
   projects: {
     1: 'iOS Cryptocurrency App: iOS Cryptocurrency app to watch all coin’s market data and news. Built in React NaJve, Reseul API.',
@@ -146,7 +148,7 @@ function others() {
 // Command
 program
   .version('0.0.1', '-v, --version')
-  .option('-a , --all', 'Display All Sections')
+  .option('-a, --all', 'Display All Sections')
   .option('-o, --objective', 'Dsiplay Objective and Summary')
   .option('-s, --skills', 'Display Skills')
   .option('-e, --experience', 'Display Experience')
@@ -156,7 +158,7 @@ program
   .parse(process.argv);
 
 
-if (program.args.length === 0) program.help();
+// if (program.args.length == 0) program.help();
 
 if (program.all) {
   resume()

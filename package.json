@@ -1,6 +1,6 @@
 {
-  "name": "jeffshomali-resume",
-  "version": "0.0.1",
+  "name": "jeffshomali",
+  "version": "0.0.3",
   "description": "Jeff Shomali Resume CLI.",
   "main": "index.js",
   "scripts": {
