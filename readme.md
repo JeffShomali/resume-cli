@@ -7,6 +7,6 @@
 - `jeffshomali` or `jeffshomali -a`
 
 ## Output
-![Output](screenshot.png)
+![Output](https://raw.githubusercontent.com/JeffShomali/resume-cli/master/screenshot.png)
 
 

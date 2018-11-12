@@ -4,6 +4,7 @@
 var program = require('commander');
 const chalk = require('chalk');
 var figlet = require('figlet');
+const terminalLink = require('terminal-link');
 
 // Display Ascii
 function displayAscii() {
@@ -39,7 +40,7 @@ var profile = {
       'UI Development',
       'Back End Web Development',
       'JavaScript Development',
-      'Mobile Development (iOS, Android)',
+      'Mobile Development (React Native)',
       'DevOps Engineer'
     ]
   },
@@ -52,22 +53,22 @@ var profile = {
     editors: 'Sublime, Atom, Visual Studio Code, PHPStorm, WebStorm'
   },
   experience: {
-    1: 'Senior Software Engenier \t\t\t\t\t\t\t\t\t Nortek Security Control - 2018 - Present',
+    1: 'Senior Software Engineer \t\t\t\t\t\t\t\t\t Nortek Security Control - 2018 - Present',
     2: 'Web Analytics Implementation Specialist \t\t\t\t\t\t\t Robert Half Technology 2018 - 2018 ',
     3: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t TUTYO 2016 – 2018',
     4: 'Full Stack Web Developer \t\t\t\t\t\t\t\t\t Purrivacy (Intern) 2015– 2016',
     5: 'Freelance Web Developer  \t\t\t\t\t\t\t\t\t 2013 – Forever'
   },
   projects: {
-    1: 'iOS Cryptocurrency App: iOS Cryptocurrency app to watch all coin’s market data and news. Built in React NaJve, Reseul API.',
-    2: 'San Francisco Bart ApplicaNon: iOS applicaJon for Bay Area Rapid Transit (BART), built in React NaJve and Flux router.',
-    3: 'Lifo: It Is a Cryptocurrency website for collecJon all news about the blockchain and crypto currency.',
-    4: 'Visual Studio Code Snippet Generator: Web applicaJon to generate snippet code for VSCode. Built in React and NodeJS.'
+    1: `iOS Cryptocurrency App: iOS Cryptocurrency app to watch all coin’s market data and news. Built in React NaJve, Restful API.`,
+    2: 'San Francisco Bart Application: iOS application for Bay Area Rapid Transit (BART), built in React NaJve and Flux router.',
+    3: 'Lifo: It Is a Cryptocurrency website for collection all news about the blockchain and crypto currency.',
+    4: 'Visual Studio Code Snippet Generator: Web application to generate snippet code for VSCode. Built in React and NodeJS.'
   },
   education: {
     1: 'Bachelor of Science in Computer Science. Trident University \t- Honor Student, GPA 3.6, Cypress, CA, April 2018',
     2: 'Associate of Science in Computer Science. Diablo Valley College \t- Honor Student, GPA 3.8, Pleasant Hill, CA, May 2016',
-    3: 'Certified Advanced Java Programming, Program Design and Computer Architecture \t- Diablo Valley Colledge 2016.',
+    3: 'Certified Advanced Java Programming, Program Design and Computer Architecture \t- Diablo Valley College 2016.',
     4: 'Certified Front-End Web Developer Nanodegree, \t- Udacity, June 2016'
   },
   others: {
