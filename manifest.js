@@ -53,10 +53,11 @@ const profile = {
     5: 'Certified Front-End Web Developer Nanodegree                                  \t- Udacity, June 2016'
   },
   others: {
-    1: 'US Citizen',
-    2: 'Twitter: @jeffshomali',
-    3: 'Skype: jeffshomali',
-    4: 'Schedule a call: calendly.com/jeffshomali'
+    "Visa Status": 'US Citizen',
+    "Twitter": '@jeffshomali',
+    "Skype": 'jeffshomali',
+    "Schedule a call": 'calendly.com/jeffshomali',
+    "Phone": '(415) 504-1135',
   }
 }
 

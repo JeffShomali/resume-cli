@@ -83,7 +83,7 @@ function others() {
   console.log(chalk.green("\nOTHERS INFORMATION: "))
   Object.entries(profile.others).forEach(entry => {
     const [key, value] = entry;
-    console.log(`\t${value}`);
+    console.log(`${key}: ${value}`);   
   })
 }
 
