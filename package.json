@@ -1,6 +1,6 @@
 {
 	"name": "jeffshomali",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Jeff Shomali Resume CLI.",
 	"main": "./index.js",
 	"scripts": {
@@ -9,7 +9,7 @@
 	"author": "Jeff Shomali <info@jeffshomali.com> (http://www.jeffshomali.com)",
 	"license": "ISC",
 	"bin": {
-		"jeffshomali": "index.js"
+		"jeffshomali": "./index.js"
 	},
 	"dependencies": {
 		"chalk": "^5.6.0",
