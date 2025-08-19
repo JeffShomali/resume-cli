@@ -1,22 +1,22 @@
 {
-  "name": "jeffshomali",
-  "version": "0.0.5",
-  "description": "Jeff Shomali Resume CLI.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Jeff Shomali <info@jeffshomali.com> (http://www.jeffshomali.com)",
-  "license": "ISC",
-  "bin": {
-    "jeffshomali": "./index.js"
-  },
-  "dependencies": {
-    "chalk": "^5.6.0",
-    "co": "^4.6.0",
-    "co-prompt": "^1.0.0",
-    "commander": "^14.0.0",
-    "figlet": "^1.8.2",
-    "terminal-link": "^4.0.0"
-  }
+	"name": "jeffshomali",
+	"version": "0.0.6",
+	"description": "Jeff Shomali Resume CLI.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Jeff Shomali <info@jeffshomali.com> (http://www.jeffshomali.com)",
+	"license": "ISC",
+	"bin": {
+		"jeffshomali": "./index.js"
+	},
+	"dependencies": {
+		"chalk": "^5.6.0",
+		"co": "^4.6.0",
+		"co-prompt": "^1.0.0",
+		"commander": "^14.0.0",
+		"figlet": "^1.8.2",
+		"terminal-link": "^4.0.0"
+	}
 }
