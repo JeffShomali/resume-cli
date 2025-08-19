@@ -2,14 +2,14 @@
 	"name": "jeffshomali",
 	"version": "0.0.6",
 	"description": "Jeff Shomali Resume CLI.",
-	"main": "index.js",
+	"main": "./index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Jeff Shomali <info@jeffshomali.com> (http://www.jeffshomali.com)",
 	"license": "ISC",
 	"bin": {
-		"jeffshomali": "./index.js"
+		"jeffshomali": "index.js"
 	},
 	"dependencies": {
 		"chalk": "^5.6.0",
